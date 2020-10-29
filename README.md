@@ -4,7 +4,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/devicefarmer/stf.svg)](https://hub.docker.com/r/devicefarmer/stf/)
 [![npm](https://img.shields.io/npm/v/@devicefarmer/stf)](https://www.npmjs.com/package/@devicefarmer/stf)
 
-**STF** (or Smartphone Test Farm) is a web application for debugging smartphones, smartwatches and other gadgets remotely, from the comfort of your browser.
+**STF** (or Smartphone Test Farm) is a web application for debugging smartphones, smartwatches and other gadgets remotely, from the comfort of your browser
 
 ## Overview
 
@@ -14,72 +14,72 @@
 
 ## Features
 
-* OS support
+- OS support
   - Android
-    * Supports versions 2.3.3 (SDK level 10) to 10 (SDK level 29)
-    * Supports Wear 5.1 (but not 5.0 due to missing permissions)
-    * Supports Fire OS, CyanogenMod, and other heavily Android based distributions
-    * `root` is **not** required for any current functionality
-* Remote control any device from your browser
+    - Supports versions 2.3.3 (SDK level 10) to 10 (SDK level 29)
+    - Supports Wear 5.1 (but not 5.0 due to missing permissions)
+    - Supports Fire OS, CyanogenMod, and other heavily Android based distributions
+    - `root` is **not** required for any current functionality
+- Remote control any device from your browser
   - Real-time screen view
-    * Refresh speed can reach 30-40 FPS depending on specs and Android version. See [minicap](https://github.com/devicefarmer/minicap) for more information.
-    * Rotation support
+    - Refresh speed can reach 30-40 FPS depending on specs and Android version. See [minicap](https://github.com/devicefarmer/minicap) for more information.
+    - Rotation support
   - Supports typing text from your own keyboard
-    * Supports meta keys
-    * Copy and paste support (although it can be a bit finicky on older devices, you may need to long-press and select paste manually)
-    * May sometimes not work well with non-Latin languages unfortunately.
+    - Supports meta keys
+    - Copy and paste support (although it can be a bit finicky on older devices, you may need to long-press and select paste manually)
+    - May sometimes not work well with non-Latin languages unfortunately.
   - Multitouch support on touch screens via [minitouch](https://github.com/devicefarmer/minitouch), two finger pinch/rotate/zoom gesture support on regular screens by pressing `Alt` while dragging
   - Drag & drop installation and launching of `.apk` files
-    * Launches main launcher activity if specified in the manifest
+    - Launches main launcher activity if specified in the manifest
   - Reverse port forwarding via [minirev](https://github.com/devicefarmer/minirev)
-    * Access your local server directly from the device, even if it's not on the same network
+    - Access your local server directly from the device, even if it's not on the same network
   - Open websites easily in any browser
-    * Installed browsers are detected in real time and shown as selectable options
-    * Default browser is detected automatically if selected by the user
+    - Installed browsers are detected in real time and shown as selectable options
+    - Default browser is detected automatically if selected by the user
   - Execute shell commands and see real-time output
   - Display and filter device logs
   - Use `adb connect` to connect to a remote device as if it was plugged in to your computer, regardless of [ADB](http://developer.android.com/tools/help/adb.html) mode and whether you're connected to the same network
-    * Run any `adb` command locally, including shell access
-    * [Android Studio](http://developer.android.com/tools/studio/index.html) and other IDE support, debug your app while watching the device screen on your browser
-    * Supports [Chrome remote debug tools](https://developer.chrome.com/devtools/docs/remote-debugging)
+    - Run any `adb` command locally, including shell access
+    - [Android Studio](http://developer.android.com/tools/studio/index.html) and other IDE support, debug your app while watching the device screen on your browser
+    - Supports [Chrome remote debug tools](https://developer.chrome.com/devtools/docs/remote-debugging)
   - File Explorer to access device file system
   - Experimental VNC support (work in progress)
-* Monitor your device inventory
+- Monitor your device inventory
   - See which devices are connected, offline/unavailable (indicating a weak USB connection), unauthorized or unplugged
   - See who's using a device
   - Search devices by phone number, IMEI, ICCID, Android version, operator, product name, group name and/or many other attributes with easy but powerful queries
   - Show a bright red screen with identifying information on a device you need to locate physically
   - Track battery level and health
   - Rudimentary Play Store account management
-    * List, remove and add new accounts (adding may not work on all devices)
+    - List, remove and add new accounts (adding may not work on all devices)
   - Display hardware specs
-* Use the Booking & Partitioning systems
+- Use the Booking & Partitioning systems
   - Overview
-    * The partitioning system allow you `[administrator level]` to allocate distinct sets of devices to different projects or organizations (i.e. represented by user sets) for an unlimited period
-    * The booking system allows you to reserve a set of devices for a set of users during a limited time (e.g. from 3:00 am to 4:00 am during 5 days)
-    * What is common to the booking & partitioning systems is the concept of Group, that is, an association of devices, users and a specification of time
-    * Report to [GroupFeature.pdf](doc/GroupFeature.pdf) for detailed documentation on how to use this feature
+    - The partitioning system allow you `[administrator level]` to allocate distinct sets of devices to different projects or organizations (i.e. represented by user sets) for an unlimited period
+    - The booking system allows you to reserve a set of devices for a set of users during a limited time (e.g. from 3:00 am to 4:00 am during 5 days)
+    - What is common to the booking & partitioning systems is the concept of Group, that is, an association of devices, users and a specification of time
+    - Report to [GroupFeature.pdf](doc/GroupFeature.pdf) for detailed documentation on how to use this feature
   - Monitor your group inventory
-    * See which groups are active, ready or pending, as well as other group properties: name, identifier, owner, devices, users, class, duration, repetition, starting date, expiration date
-    * Search groups by their property values
-    * Contact by email the owners of the selected groups 
+    - See which groups are active, ready or pending, as well as other group properties: name, identifier, owner, devices, users, class, duration, repetition, starting date, expiration date
+    - Search groups by their property values
+    - Contact by email the owners of the selected groups
   - Manage your groups
-    * Create a group by specifying its name, devices, users and schedule
-    * Get ready your group in order it is scheduled by the system
-    * Search groups by their property values
-    * Remove your group or a selection of your groups
-    * Contact by email the owners of the selected groups `[administrator level]`
-* Manage the devices `[administrator level]`
+    - Create a group by specifying its name, devices, users and schedule
+    - Get ready your group in order it is scheduled by the system
+    - Search groups by their property values
+    - Remove your group or a selection of your groups
+    - Contact by email the owners of the selected groups `[administrator level]`
+- Manage the devices `[administrator level]`
   - Search the devices by their property values
-  - Remove a  device or a selection of devices meeting a set of filters: present, booked, annotated, controlled
-* Manage the users `[administrator level]`
+  - Remove a device or a selection of devices meeting a set of filters: present, booked, annotated, controlled
+- Manage the users `[administrator level]`
   - Create a user by providing his name and his email
   - Search the users by their property values
   - Remove a user or a selection of users meeting a set of filters: group owner
   - Contact a user or a selection of users by email
   - Set the default groups quotas applicable to all users
   - Set the groups quotas applicable to a specific user
-* Simple REST [API](doc/API.md)
+- Simple REST [API](doc/API.md)
 
 ## Status
 
@@ -106,14 +106,14 @@ As the product has evolved from an internal tool running in our internal network
 
 ## Requirements
 
-* [Node.js](https://nodejs.org/) 8.x **required** (some dependencies don't support newer versions)
-* [ADB](http://developer.android.com/tools/help/adb.html) properly set up
-* [RethinkDB](http://rethinkdb.com/) >= 2.2
-* [GraphicsMagick](http://www.graphicsmagick.org/) (for resizing screenshots)
-* [ZeroMQ](http://zeromq.org/) libraries installed
-* [Protocol Buffers](https://github.com/google/protobuf) libraries installed
-* [yasm](http://yasm.tortall.net/) installed (for compiling embedded [libjpeg-turbo](https://github.com/devicefarmer/node-jpeg-turbo))
-* [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config/) so that Node.js can find the libraries
+- [Node.js](https://nodejs.org/) 8.x **required** (some dependencies don't support newer versions)
+- [ADB](http://developer.android.com/tools/help/adb.html) properly set up
+- [RethinkDB](http://rethinkdb.com/) >= 2.2
+- [GraphicsMagick](http://www.graphicsmagick.org/) (for resizing screenshots)
+- [ZeroMQ](http://zeromq.org/) libraries installed
+- [Protocol Buffers](https://github.com/google/protobuf) libraries installed
+- [yasm](http://yasm.tortall.net/) installed (for compiling embedded [libjpeg-turbo](https://github.com/devicefarmer/node-jpeg-turbo))
+- [pkg-config](http://www.freedesktop.org/wiki/Software/pkg-config/) so that Node.js can find the libraries
 
 Note that you need these dependencies even if you've installed STF directly from [NPM](https://www.npmjs.com/), because they can't be included in the package.
 
@@ -175,18 +175,20 @@ _Note: if it takes a long time for RethinkDB to start up, you may be running int
 
 You should now have RethinkDB running locally. Running the command again in the same folder will reuse the data from the previous session.
 
-An administrator level is available in STF in addition of the native user one, with increased rights on some features (e.g.  booking & partitioning systems, management of users & devices, ...). The corresponding built-in administrator user has the following default credentials:
+An administrator level is available in STF in addition of the native user one, with increased rights on some features (e.g. booking & partitioning systems, management of users & devices, ...). The corresponding built-in administrator user has the following default credentials:
+
 - name: `administrator`
 - email: `administrator@fakedomain.com`
 
 Another built-in object exists, this is the root standard group to which the users and devices belong the first time they register to the STF database, its default name is `Common`
 
-These built-in objects are created in the STF database if they do not already exist 
+These built-in objects are created in the STF database if they do not already exist
 
 Of course, you can override the default values of these built-in objects by settings the following environment variables before to initialize the STF database through `stf local` or `stf migrate` commands:
--	root standard group name: `STF_ROOT_GROUP_NAME` 
--	administrator user name: `STF_ADMIN_NAME`
--	administrator user email: `STF_ADMIN_EMAIL`
+
+- root standard group name: `STF_ROOT_GROUP_NAME`
+- administrator user name: `STF_ADMIN_NAME`
+- administrator user email: `STF_ADMIN_EMAIL`
 
 You're now ready to start up STF itself:
 
@@ -238,13 +240,13 @@ The most common issue is that a device will lose all of its active USB connectio
 
 Below are the most common errors that do require manual intervention.
 
-* One device worker keeps getting respawned all the time
+- One device worker keeps getting respawned all the time
   - Rebooting the device usually helps. If the device stays online for long enough you might be able to do it from the UI. Otherwise you'll have to SSH into the server and run `adb reboot` manually.
   - This could be a sign that you're having USB problems, and the device wishes to be moved elsewhere. The less complex your setup is the fewer problems you're going to experience. See [troubleshooting](#troubleshooting).
   - We're working on adding periodic automatic restarts and better graceful recovery to alleviate the issue.
-* A whole group of devices keeps dying at once
+- A whole group of devices keeps dying at once
   - They're most likely connected to the same USB hub. Either the hub is bad or you have other compatibility issues. In our experience this usually happens with USB 3.0 hubs, or you may have a problem with your USB extension card. See [recommended hardware](#recommended-hardware).
-* A device that should be online is not showing up in the list or is showing up as disconnected
+- A device that should be online is not showing up in the list or is showing up as disconnected
   - See [troubleshooting](#troubleshooting).
 
 ### How do I uninstall STF from my device?
@@ -274,53 +276,53 @@ Your device is now clean.
 
 There can be various reasons for this behavior. Some especially common reasons are:
 
-* USB debugging is not enabled
+- USB debugging is not enabled
   - Enable it.
-* USB debugging is enabled but the USB connection mode is wrong
+- USB debugging is enabled but the USB connection mode is wrong
   - Try switching between MTP and PTP modes and see if the device appears. This happens fairly often on Mac OS but almost never on Linux.
-* You don't have the ADB daemon running
+- You don't have the ADB daemon running
   - Make sure ADB is running with `adb start-server`.
-* You haven't authorized the ADB key yet
+- You haven't authorized the ADB key yet
   - Check your device for an authentication dialog. You may need to unplug and then plug the device back in to see the dialog.
-* ADB hasn't whitelisted the manufacturer's vendor ID
+- ADB hasn't whitelisted the manufacturer's vendor ID
   - [Add it yourself](https://github.com/apkudo/adbusbini) or wait for the new version that removes the stupid whitelisting feature to be deployed.
-* Insufficient power supply
+- Insufficient power supply
   - If you're using a USB hub, try a [powered hub](#recommended-hardware) instead (one that comes with a separate AC adapter).
   - Even if you're using a powered hub, there might not actually be enough power for all ports simultaneously. [Get a better hub](#recommended-hardware) or use fewer ports.
   - Your device is too power hungry, can happen with tablets. [Get a better hub](#recommended-hardware).
-* Insufficient USB host controller resources
+- Insufficient USB host controller resources
   - On Linux, use `dmesg` to check for this error
   - If you've only got 9-12 devices connected and an Intel (Haswell) processor, it's most likely an issue with the processor. If your BIOS has an option to disable USB 3.0, that might help. If not, you're screwed and must get a PCIE extension card with onboard controllers.
-* Your powered USB hub does not support the device
+- Your powered USB hub does not support the device
   - Can happen with older devices and newer Battery Charging spec compatible hubs. [Get a more compatible hub](#recommended-hardware).
-* The USB cable is bad
+- The USB cable is bad
   - It happens. Try another one.
-* The USB hub is broken
+- The USB hub is broken
   - This, too, happens. Just try a new one.
-* The device might not have a unique USB serial number, causing STF to overwrite the other device instead
+- The device might not have a unique USB serial number, causing STF to overwrite the other device instead
   - This has never happened to us so far, but we do have one dirt-cheap Android 4.4 device whose serial number is the wonderfully unique "0123456789ABCDEF". Presumably if we had more than one unit we would have a problem.
 
 ### A device that was previously connected no longer shows up in the list.
 
 Again, there can be various reasons for this behavior as well. Some common reasons are:
 
-* The device ran out of power
+- The device ran out of power
   - You can see the last reported power level in the device list, unless there was a lengthy power outage preventing the battery level from being reported.
-* Someone accidentally disabled USB debugging remotely
+- Someone accidentally disabled USB debugging remotely
   - Yes, it happens.
-* An OS update disabled USB debugging
+- An OS update disabled USB debugging
   - Yes, it happens. Especially on Fire OS.
-* Someone touched the USB cable just the wrong way causing a disconnection
+- Someone touched the USB cable just the wrong way causing a disconnection
   - Happens easily.
-* Your PCIE USB extension card died
+- Your PCIE USB extension card died
   - Yes, it happens.
-* Temporary network issues
+- Temporary network issues
   - Can't help with that.
-* Someone removed the device physically.
+- Someone removed the device physically.
   - Or that.
-* You're on Mac OS
+- You're on Mac OS
   - There's a bug in ADB's Mac OS implementation that causes devices to be lost on error conditions. The problem is more pronounced when using USB hubs. You have to unplug and then plug it back in again.
-* The USB hub broke
+- The USB hub broke
   - Happens. Just try a new one.
 
 ### Remote debugging (i.e. `adb connect`) disconnects while I'm working.
@@ -341,26 +343,26 @@ These components are for the PC where the USB devices are connected. Our operati
 
 Our currently favorite build is as follows. It will be able to provide 28 devices using powered USB hubs, and about 10 more if you're willing to use the motherboard's USB ports, which is usually not recommended for stability reasons. Note that our component selection is somewhat limited by their availability in Japan.
 
-| Component | Recommendation | How many |
-|-----------|------|----------|
-| PC case | [XIGMATEK Nebula](http://www.xigmatek.com/product.php?productid=219) | x1 |
-| Motherboard | [ASUS H97I-PLUS](https://www.asus.com/Motherboards/H97IPLUS/) | x1 |
-| Processor | [Intel® Core™ i5-4460](http://ark.intel.com/products/80817/Intel-Core-i5-4460-Processor-6M-Cache-up-to-3_40-GHz) | x1 |
-| PSU | [Corsair CX Series™ Modular CX430M ATX Power Supply](http://www.corsair.com/en/cx-series-cx430m-modular-atx-power-supply-430-watt-80-plus-bronze-certified-modular-psu) | x1 |
-| Memory | Your favorite DDR3 1600 MHz 8GB stick | x1 |
-| SSD | [A-DATA Premier Pro SP900 64GB SSD](http://www.adata.com/en/ssd/specification/171) | x1 |
-| USB extension card | [StarTech.com 4 Port PCI Express (PCIe) SuperSpeed USB 3.0 Card Adapter w/ 4 Dedicated 5Gbps Channels - UASP - SATA / LP4 Power](http://www.startech.com/Cards-Adapters/USB-3.0/Cards/PCI-Express-USB-3-Card-4-Dedicated-Channels-4-Port~PEXUSB3S44V) | x1 |
-| USB hub | [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc) | x4 |
-| MicroUSB cable | [Monoprice.com 1.5ft USB 2.0 A Male to Micro 5pin Male 28/24AWG Cable w/ Ferrite Core (Gold Plated)](http://www.monoprice.com/Product?c_id=103&cp_id=10303&cs_id=1030307&p_id=5456&seq=1&format=2) | x28 |
+| Component          | Recommendation                                                                                                                                                                                                                                        | How many |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| PC case            | [XIGMATEK Nebula](http://www.xigmatek.com/product.php?productid=219)                                                                                                                                                                                  | x1       |
+| Motherboard        | [ASUS H97I-PLUS](https://www.asus.com/Motherboards/H97IPLUS/)                                                                                                                                                                                         | x1       |
+| Processor          | [Intel® Core™ i5-4460](http://ark.intel.com/products/80817/Intel-Core-i5-4460-Processor-6M-Cache-up-to-3_40-GHz)                                                                                                                                      | x1       |
+| PSU                | [Corsair CX Series™ Modular CX430M ATX Power Supply](http://www.corsair.com/en/cx-series-cx430m-modular-atx-power-supply-430-watt-80-plus-bronze-certified-modular-psu)                                                                               | x1       |
+| Memory             | Your favorite DDR3 1600 MHz 8GB stick                                                                                                                                                                                                                 | x1       |
+| SSD                | [A-DATA Premier Pro SP900 64GB SSD](http://www.adata.com/en/ssd/specification/171)                                                                                                                                                                    | x1       |
+| USB extension card | [StarTech.com 4 Port PCI Express (PCIe) SuperSpeed USB 3.0 Card Adapter w/ 4 Dedicated 5Gbps Channels - UASP - SATA / LP4 Power](http://www.startech.com/Cards-Adapters/USB-3.0/Cards/PCI-Express-USB-3-Card-4-Dedicated-Channels-4-Port~PEXUSB3S44V) | x1       |
+| USB hub            | [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc)                                                                                                                                                        | x4       |
+| MicroUSB cable     | [Monoprice.com 1.5ft USB 2.0 A Male to Micro 5pin Male 28/24AWG Cable w/ Ferrite Core (Gold Plated)](http://www.monoprice.com/Product?c_id=103&cp_id=10303&cs_id=1030307&p_id=5456&seq=1&format=2)                                                    | x28      |
 
 You may also need extension cords for power.
 
 Alternatively, if you find that some of your older devices [do not support the recommended hub](#troubleshooting), you may wish to mix the hub selection as follows:
 
-| Component | Recommendation | How many |
-|-----------|------|----------|
-| USB hub | [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc) | x2 |
-| USB hub for older devices | [System TALKS USB2-HUB4XA-BK](http://www.system-talks.co.jp/product/sgc-4X.htm) | x2-4 |
+| Component                 | Recommendation                                                                                 | How many |
+| ------------------------- | ---------------------------------------------------------------------------------------------- | -------- |
+| USB hub                   | [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc) | x2       |
+| USB hub for older devices | [System TALKS USB2-HUB4XA-BK](http://www.system-talks.co.jp/product/sgc-4X.htm)                | x2-4     |
 
 You can connect up to two of the older hubs (providing up to 8 devices total) directly to the motherboard without exhausting USB host controller resources.
 
@@ -374,11 +376,11 @@ _Note that our hardware score ratings only reflect their use for the purposes of
 
 ##### USB extension cards
 
-| Name | Score | Short explanation |
-|------|-------|-------------------|
-| [StarTech.com 4 Port PCI Express (PCIe) SuperSpeed USB 3.0 Card Adapter w/ 4 Dedicated 5Gbps Channels - UASP - SATA / LP4 Power](http://www.startech.com/Cards-Adapters/USB-3.0/Cards/PCI-Express-USB-3-Card-4-Dedicated-Channels-4-Port~PEXUSB3S44V) | 9/10 | Reliable, well supported chipset and good power connections |
-| [StarTech.com 4 Independent Port PCI Express USB 2.0 Adapter Card](http://www.startech.com/Cards-Adapters/USB-2/Card/4-Independent-Port-PCI-Express-USB-Card~PEXUSB400) | 8/10 | Reliable |
-| [玄人志向 USB3.0RX4-P4-PCIE](http://www.kuroutoshikou.com/product/interface/usb/usb3_0rx4-p4-pcie/) | 4/10 | Well supported chipset but breaks VERY easily |
+| Name                                                                                                                                                                                                                                                  | Score | Short explanation                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------------------- |
+| [StarTech.com 4 Port PCI Express (PCIe) SuperSpeed USB 3.0 Card Adapter w/ 4 Dedicated 5Gbps Channels - UASP - SATA / LP4 Power](http://www.startech.com/Cards-Adapters/USB-3.0/Cards/PCI-Express-USB-3-Card-4-Dedicated-Channels-4-Port~PEXUSB3S44V) | 9/10  | Reliable, well supported chipset and good power connections |
+| [StarTech.com 4 Independent Port PCI Express USB 2.0 Adapter Card](http://www.startech.com/Cards-Adapters/USB-2/Card/4-Independent-Port-PCI-Express-USB-Card~PEXUSB400)                                                                               | 8/10  | Reliable                                                    |
+| [玄人志向 USB3.0RX4-P4-PCIE](http://www.kuroutoshikou.com/product/interface/usb/usb3_0rx4-p4-pcie/)                                                                                                                                                   | 4/10  | Well supported chipset but breaks VERY easily               |
 
 Our current recommendation is [StarTech.com's PEXUSB3S44V](http://www.startech.com/Cards-Adapters/USB-3.0/Cards/PCI-Express-USB-3-Card-4-Dedicated-Channels-4-Port~PEXUSB3S44V). It provides an independent Renesas (allegedly Linux-friendliest) µPD720202 host controller for each port. Another option from the same maker is [PEXUSB400](http://www.startech.com/Cards-Adapters/USB-2/Card/4-Independent-Port-PCI-Express-USB-Card~PEXUSB400), which also works great but may offer slightly less future proofing.
 
@@ -386,14 +388,14 @@ Our [玄人志向 USB3.0RX4-P4-PCIE](http://www.kuroutoshikou.com/product/interf
 
 ##### USB hubs
 
-| Name | Score | Short explanation |
-|------|-------|-------------------|
-| [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc) | 8/10 | High power output, high reliability |
-| [Plugable USB 3.0 7-port Charging Hub with 60W Power Adapter](http://plugable.com/products/usb3-hub7bc) | 5/10 | High power output, low reliability |
-| [System TALKS USB2-HUB4XA-BK USB 2.0 hub with power adapter](http://www.system-talks.co.jp/product/sgc-4X.htm) | 7/10 | High power output on two ports which complicates device positioning, low port count |
-| [Anker USB 3.0 9-Port Hub + 5V 2.1A Charging Port](http://www.ianker.com/product/68ANHUB-B10A) | 2/10 | High port count, insufficient power |
-| [ORICO P10-U2 External ABS 10 Port 2.0 USB HUB for Laptop/Desktop-BLACK](http://www.aliexpress.com/store/product/Orico-p10-u2-computer-usb-hub-usb-splitter-10-usb-hub-interface/105327_1571541943.html) | 3/10 | High port count, insufficient power |
-| [ORICO BH4-U3-BK ABS 4 Port USB3.0 BC1.2 Charging HUB with 12V3A Power Adapter-BLACK](http://www.aliexpress.com/store/product/ORICO-BH4-U3-BK-ABS-4-Port-USB3-0-BC1-2-Charging-HUB-with-12V3A-Power/105327_2035899542.html) | 5/10 | High power output, low reliability |
+| Name                                                                                                                                                                                                                        | Score | Short explanation                                                                   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ----------------------------------------------------------------------------------- |
+| [Plugable USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc)                                                                                                                              | 8/10  | High power output, high reliability                                                 |
+| [Plugable USB 3.0 7-port Charging Hub with 60W Power Adapter](http://plugable.com/products/usb3-hub7bc)                                                                                                                     | 5/10  | High power output, low reliability                                                  |
+| [System TALKS USB2-HUB4XA-BK USB 2.0 hub with power adapter](http://www.system-talks.co.jp/product/sgc-4X.htm)                                                                                                              | 7/10  | High power output on two ports which complicates device positioning, low port count |
+| [Anker USB 3.0 9-Port Hub + 5V 2.1A Charging Port](http://www.ianker.com/product/68ANHUB-B10A)                                                                                                                              | 2/10  | High port count, insufficient power                                                 |
+| [ORICO P10-U2 External ABS 10 Port 2.0 USB HUB for Laptop/Desktop-BLACK](http://www.aliexpress.com/store/product/Orico-p10-u2-computer-usb-hub-usb-splitter-10-usb-hub-interface/105327_1571541943.html)                    | 3/10  | High port count, insufficient power                                                 |
+| [ORICO BH4-U3-BK ABS 4 Port USB3.0 BC1.2 Charging HUB with 12V3A Power Adapter-BLACK](http://www.aliexpress.com/store/product/ORICO-BH4-U3-BK-ABS-4-Port-USB3-0-BC1-2-Charging-HUB-with-12V3A-Power/105327_2035899542.html) | 5/10  | High power output, low reliability                                                  |
 
 The best hub we've found so far is Plugable's [USB 2.0 7 Port Hub with 60W Power Adapter](http://plugable.com/products/usb2-hub7bc). It's able to provide 1.5A per port for Battery Charging spec compliant devices, which is enough to both charge and sync even tablets (although charging will not occur at maximum speed, but that's irrelevant to us). Note that even devices that are not compliant will usually charge and sync just fine, albeit slower. The more recent USB 3.0 version has proven unreliable with the rest of our components, causing the whole hub to disconnect at times. Annoyingly the ports face the opposite direction, too. Note that ORICO also provides hubs that are identical to Plugable's offerings, the latter of which seem to be rebrands.
 
@@ -412,6 +414,7 @@ If you would like translate to any other language, please contribute in the [STF
 For updating the source and all the translation files first you have to install the [Transifex client](http://docs.transifex.com/client/setup/).
 
 Then just run:
+
 ```bash
 gulp translate
 ```
@@ -456,8 +459,8 @@ See [Credits](doc/CREDITS.md) for more details.
 
 It depends on how you are using STF. One or more of those changes may be needed:
 
-* change Docker image coordinates eg. `docker pull openstf/stf` to `docker pull devicefarmer/stf`
-* change npmjs package coordinates eg. `npm install -g stf` to `npm install -g @devicefarmer/stf`
+- change Docker image coordinates eg. `docker pull openstf/stf` to `docker pull devicefarmer/stf`
+- change npmjs package coordinates eg. `npm install -g stf` to `npm install -g @devicefarmer/stf`
 
 #### Will version OpenSTF 3.4.2 be published to npmjs?
 
