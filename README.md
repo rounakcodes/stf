@@ -4,7 +4,7 @@
 [![Docker Pulls](https://img.shields.io/docker/pulls/devicefarmer/stf.svg)](https://hub.docker.com/r/devicefarmer/stf/)
 [![npm](https://img.shields.io/npm/v/@devicefarmer/stf)](https://www.npmjs.com/package/@devicefarmer/stf)
 
-**STF** (or Smartphone Test Farm) is a web application for debugging smartphones, smartwatches and other gadgets remotely, from the comfort of your browser
+**STF** (or Smartphone Test Farm) is a web application for debugging smartphones, smartwatches and other gadgets remotely, from the comfort of your browser.
 
 ## Overview
 
